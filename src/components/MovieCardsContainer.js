@@ -1,10 +1,11 @@
 import './MovieCardsContainer.css';
 import moviesJSON from '../JSON/movies.json';
+import MovieCard from './MovieCard';
 
 function MovieCardsContainer () {
     const movies = moviesJSON.slice(0,5).map((movie) => {
         return (
-            <div key={movie.id}>{movie.title}</div>
+            <MovieCard key={movie.id} movieData={movie} />
         )
     });
 

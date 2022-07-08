@@ -1,0 +1,21 @@
+.movie-cards__card {
+    border-radius: 10px;
+    max-width: 220px;
+    max-height: 330px;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
+.movie-cards__card button {
+    display: block;
+    border: none;
+    filter: brightness(75%);
+    transition: all .5s ease-in-out;
+}
+
+.movie-cards__card button:hover {
+    cursor: pointer;
+    filter: brightness(125%);
+}
