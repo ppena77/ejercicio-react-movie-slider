@@ -1,4 +1,3 @@
-import './Home.css';
 import MovieCardsContainer from "./MovieCardsContainer";
 
 function Home () {
