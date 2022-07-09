@@ -1,4 +1,5 @@
 import './MovieCard.css';
+import {Link} from 'react-router-dom';
 
 function MovieCard (props) {
 
@@ -6,9 +7,11 @@ function MovieCard (props) {
     
     return (
         <div className='movie-cards__card'>
-            <button>
-                <img src={imgSrcDomain + props.movieData.poster_path} alt={props.movieData.title} title={props.movieData.title} />
-            </button>
+            <Link to="/pelicula">
+                <button>
+                    <img src={imgSrcDomain + props.movieData.poster_path} alt={props.movieData.title} title={props.movieData.title} />
+                </button>
+            </Link>
         </div>
     )    
 };
