@@ -2,9 +2,10 @@ import './MovieCard.css';
 import {useNavigate} from 'react-router-dom';
 
 function MovieCard (props) {
+
     const navigate = useNavigate();
     function toNavigate() {
-        navigate('/pelicula');
+        navigate(`/pelicula/${props.movieData.id}/${props.movieData.title}`);
     };
 
     const imgSrcDomain = 'https://image.tmdb.org/t/p/w220_and_h330_face';

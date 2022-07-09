@@ -1,11 +1,12 @@
 import './Pelicula.css';
-import {Link} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 
 function Pelicula () {
+    let {id, title} = useParams();
 
     return (
         <>
-            <h1>Películas</h1>
+            <h1>{title}</h1>
 
             <p className="gotoHome"><Link to="/home">Volver</Link></p>
         </>
